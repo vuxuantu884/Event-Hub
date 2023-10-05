@@ -1,0 +1,65 @@
+.footer {
+    margin-top: 30px;
+    border-top: 1px solid rgb(160, 157, 154);
+    padding: 50px;
+    background-color: rgb(175, 42, 127);
+}
+.block_footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-top: 1px solid rgb(102, 102, 102);
+    border-bottom: 1px solid rgb(102, 102, 102);
+}
+.img_barcode_footer {
+    margin-left: 10px;
+}
+.footer_left {
+    width: 30%;
+}
+.company_address, .contact, .Email {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.address, .phone_number, .Email_contact {
+    margin:7px;
+}
+.phone_number, .Email_contact {
+    color: rgb(94, 78, 78);
+    text-decoration: underline;
+}
+.footer_right {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+.footer_center {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+.block_center > a {
+    margin:7px;
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+a:hover {
+    color: white;
+}
+.category_pay > a > img {
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0 3px;
+}
+.text_footer {
+    text-align: center;
+}
+.contact > svg {
+    color: rgb(94, 78, 78);
+}
+.Email > svg {
+    color: rgb(94, 78, 78);
+}
