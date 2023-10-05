@@ -1,0 +1,187 @@
+.img_detail {
+    width: 100%;
+}
+.font_ticket {
+    font-family: verdana, geneva, sans-serif;
+    font-size: 12pt;
+}
+.img_event_detail {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+.information_Book_ticket {
+    width: 80%;
+    margin: 50px auto;
+}
+.detail_information {
+    text-align: justify;
+}
+.text_information {
+    font-family: verdana, geneva, sans-serif; font-size: 12pt;
+}
+.book_ticket {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 -2px 20px 2px #ccc;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    font-family: "Open Sans";
+    padding: 20px;
+}
+.hours_event, .date_detail_event, .locate_event, .price_ticket {
+    display: flex;
+    align-items: center;
+}
+.house, .date, .locate, .price {
+    margin: 7px 0 7px 7px;
+}
+.button_book {
+    display: flex;
+    align-items: center;
+    padding: 5px 50px;
+    background-color: #7872D6;
+    color: white;
+    border: none;
+    width: 100%;
+    justify-content: center;
+    cursor: pointer;
+}
+.text_button {
+    margin: 10px 5px;
+}
+.information_ticker {
+    width: 80%;
+}
+.ticket {
+    width: 20%;
+}
+.book_ticker_online {
+    display: flex;
+    align-items: center;
+    margin: 7px 0;
+}
+.st-remove-label {
+    margin: 0 10px;
+}
+#contact_support {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 5px;
+}
+#contact_support > p > a {
+    color: red;
+}
+#contact_support > p > div > a {
+    color: red;
+}
+.event_introduction {
+    box-shadow: 0 -2px 20px 2px #ccc;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    font-family: "Open Sans";
+    padding: 20px;
+}
+.ticket_title {
+    text-align: center;
+    color: #7872D6;
+    font-size: 18px;
+    margin: 25px 0;
+    font-family: "Open Sans";
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.organizational_information {
+    box-shadow: 0 -2px 20px 2px #ccc;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    font-family: "Open Sans";
+    padding: 20px;
+}
+.sub_organiser {
+    display: flex;
+}
+.about_organiser {
+    margin-left: 20px;
+}
+.title_about_organiser {
+    margin: 0;
+    font-size: 18px;
+}
+.container_form {
+    display: flex;
+}
+.title-border-left {
+    color: #333;
+    border-left: 5px solid #ff672a;
+    display: inline-block;
+    padding-left: 15px;
+    font-weight: 700!important;
+    text-transform: uppercase!important;
+    margin-bottom: 15px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.panel-group {
+    margin-bottom: 20px;
+}
+.panel-group .panel {
+    margin-bottom: 0;
+    border-radius: 4px;
+}
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+.panel-default {
+    border-color: #ddd;
+}
+#accordion_order .panel-default > .panel-heading {
+    background-color: transparent;
+    border-color: transparent;
+    color: #333;
+}
+.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit;
+}
+/* .iCheck-helper, .icheck {
+    position: absolute;
+    top: -20%;
+    left: -20%;
+    display: block;
+    width: 140%;
+    height: 140%;
+    margin: 0px;
+    padding: 0px;
+    background: rgb(255, 255, 255);
+    border: 0px;
+    opacity: 0;
+} */
