@@ -2,10 +2,13 @@
 import React from 'react';
 import Carousel from './Carousel ';
 import '../css/container.css';
-import Dropdown from './DropDown';
+// import Dropdown from './DropDown';
 import EventDetail from './EventDetail';
 import SeeMoreButton from './SeeMoreButton';
 import Image from 'next/image';
+import { Button, Dropdown, message, Space, Tooltip } from 'antd';
+import { DownOutlined, UserOutlined } from '@ant-design/icons';
+import type { MenuProps } from 'antd';
 
 const options1 = [
   { label: 'Tuần này', value: 'option1' },
@@ -67,6 +70,46 @@ const listImages = [
     img: '/images/image9.png',
   },
 ];
+const items: MenuProps['items'] = [
+  {
+    label: 'Thứ 2',
+    key: '1',
+  },
+  {
+    label: 'Thứ 3',
+    key: '2',
+  },
+  {
+    label: 'Thứ 4',
+    key: '3',
+  },
+  {
+    label: 'Thứ 5',
+    key: '4',
+  },
+];
+const item: MenuProps['items'] = [
+  {
+    label: 'Ca nhạc',
+    key: '1',
+  },
+  {
+    label: 'Hát chèo',
+    key: '2',
+  },
+];
+const handleMenuClick: MenuProps['onClick'] = (e) => {
+  message.info('Click on menu item.');
+  console.log('click', e);
+};
+const menuProps = {
+  items,
+  onClick: handleMenuClick,
+};
+const menuProp = {
+  item,
+  onClick: handleMenuClick,
+};
 export default function Container() {
   return (
     <div>
@@ -75,8 +118,18 @@ export default function Container() {
         <div className='title_content'>
           <h2 className='title'>Sự Kiện Sắp Tới</h2>
           <div className='filter_content'>
-            <Dropdown select='selecOption1' options={options1} />
-            <Dropdown select='selecOption2' options={options2} />
+            {/* <Dropdown select='selecOption1' options={options1} />
+            <Dropdown select='selecOption2' options={options2} /> */}
+            <div className="dropdown">
+              <button className="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </button>
+              <ul className="dropdown-menu">
+                <li><button className="dropdown-item" type="button">Dropdown item</button></li>
+                <li><button className="dropdown-item" type="button">Dropdown item</button></li>
+                <li><button className="dropdown-item" type="button">Dropdown item</button></li>
+              </ul>
+            </div>
           </div>
         </div>
         <div className='list_event'>
