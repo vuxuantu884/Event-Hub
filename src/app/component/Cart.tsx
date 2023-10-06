@@ -1,11 +1,11 @@
 'use client'
 import React from 'react';
-import '../css/EventDetail.css';
+import '../css/Cart.css';
 // @ts-ignore
 export default function Cart({ ticket }) {
   return(
     <div className="Event">
-        <div className="form-group">
+        <div className="form-group-cart">
             <label className="control-label col-md-6 col-xs-9">
                 <span>
                     {ticket.name}

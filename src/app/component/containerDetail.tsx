@@ -163,7 +163,7 @@ function containerDetail() {
                 </div>
             </div>
         </div>
-        <Modal open={isModalOpen} onOk={handleOk} onCancel={handleCancel} width='80%'>
+        <Modal open={isModalOpen} onOk={handleOk} onCancel={handleCancel} width='80%' footer={null}>
             <div className="onpageForm">
                 <form action="" method="post" id="cartcheckout">
                     <div className="container">
@@ -181,13 +181,13 @@ function containerDetail() {
                                 <div className="cover-form-group">
                                     <div className="form-group">
                                         <label>Email: </label>
-                                        <input id="email" className="form-control" name="email" type="text" />
+                                        <input id="email" className="form-control" name="email" type="text" placeholder='vui lòng nhập'/>
                                     </div>
                                 </div>
                                 <div className="cover-form-group">
                                     <div className="form-group">
                                         <label>Địa chỉ:</label>
-                                        <input id="address" className="form-control" name="address" type="text"/>
+                                        <input id="address" className="form-control" name="address" type="text" placeholder='vui lòng nhập'/>
                                     </div>
                                 </div>
                                 <div className="title-border-left uppercase bold">LỰA CHỌN THANH TOÁN </div>
@@ -214,9 +214,7 @@ function containerDetail() {
                                         <div className="panel-heading">
                                             <h4 className="panel-title">
                                                 <label>
-                                                    <div className="iradio_square-orange"><input type="radio" name="payment_method_id" className="icheck" value="1" /><ins className="iCheck-helper"></ins></div>
-                                                    <span>ATM / Internet Banking</span>
-
+                                                    <input type="radio" name="payment_method_id" className="icheck" value="1" /><ins className="iCheck-helper"></ins><span>ATM / Internet Banking</span>
                                                     <i className="fa fa-credit-card-alt"></i>
                                                     <a className="trigger_a" data-toggle="collapse" data-parent="#accordion_order" href="#collapseTwo"></a>
                                                 </label>
@@ -234,9 +232,7 @@ function containerDetail() {
                                         <div className="panel-heading">
                                             <h4 className="panel-title">
                                             <label>
-                                            <div className="iradio_square-orange"><input type="radio" name="payment_method_id" className="icheck" value="5" /><ins className="iCheck-helper"></ins></div>
-                                            <span>Chuyển khoản</span>
-
+                                            <input type="radio" name="payment_method_id" className="icheck" value="5" /><ins className="iCheck-helper"></ins> <span>Chuyển khoản</span>
                                             <i className="fa fa-university"></i>
                                             <a className="trigger_a" data-toggle="collapse" data-parent="#accordion_order" href="#collapseThree"></a>
                                             </label>
@@ -255,7 +251,7 @@ function containerDetail() {
                                         <div className="panel-heading">
                                             <h4 className="panel-title">
                                                 <label>
-                                                    <div className="iradio_square-orange"><input type="radio" name="payment_method_id" className="icheck" value="9" /><ins className="iCheck-helper"></ins></div> <span>Thẻ tín dụng quốc tế</span>
+                                                    <input type="radio" name="payment_method_id" className="icheck" value="9" /><ins className="iCheck-helper"></ins><span>Thẻ tín dụng quốc tế</span>
                                                     <i className="fa fa-cc-visa font24"></i> <i className="fa fa-cc-mastercard font24"></i> <i className="fa fa-cc-jcb font24"></i>
                                                     <a className="trigger_a" data-toggle="collapse" data-parent="#accordion_order" href="#collapseFive"></a>
                                                 </label>
@@ -273,7 +269,7 @@ function containerDetail() {
                                         <div className="panel-heading">
                                             <h4 className="panel-title">
                                                 <label>
-                                                    <div className="iradio_square-orange"><input type="radio" name="payment_method_id" className="icheck" value="12" /><ins className="iCheck-helper"></ins></div> <span>Ví điện tử MoMo</span>
+                                                    <input type="radio" name="payment_method_id" className="icheck" value="12" /><ins className="iCheck-helper"></ins><span>Ví điện tử MoMo</span>
                                                     <a className="trigger_a" data-toggle="collapse" data-parent="#accordion_order" href="#collapse11"></a>
                                                 </label>
                                             </h4>
@@ -333,7 +329,7 @@ function containerDetail() {
                                     </div>
                                     <div className="col-xs-12">
                                         <label>
-                                        <div className="icheckbox_square-red checked"><input type="checkbox" name="agree" className="icheck" value="1" /><ins className="iCheck-helper"></ins></div> Tôi đồng ý với các Điều khoản &amp; Chính sách của Tickego.vn </label>
+                                        <div className="icheckbox_square-red checked"><input type="checkbox" name="agree" className="icheck" value="1" /><ins className="iCheck-helper"></ins><span className='rules'> Tôi đồng ý với các Điều khoản &amp; Chính sách của Tickego.vn </span></div> </label>
                                         <button type="submit" id="ladda_button" className="btn btn-block orange-background ladda-button" data-style="expand-left"><span className="ladda-label">Tiếp tục thanh toán</span></button>
                                     </div>
                                 </div>
