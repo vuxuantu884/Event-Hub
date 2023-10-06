@@ -281,6 +281,15 @@ tr {
     width: 100%;
     background-color:#8F9294;
 }
+.filter_content {
+    display: flex !important;
+}
+.filter_content > .dropdown > button {
+    border-radius: 30px !important;
+}
+.button_week, .button_event {
+    border-radius: 30px !important;
+}
 /* .icheck {
     position: absolute;
     top: -20%;

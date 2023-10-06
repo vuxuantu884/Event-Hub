@@ -2,7 +2,7 @@
     margin-top: 30px;
     border-top: 1px solid rgb(160, 157, 154);
     padding: 50px;
-    background-color: rgb(175, 42, 127);
+    background-color: #8F3FBC;
 }
 .block_footer {
     display: flex;
@@ -17,6 +17,9 @@
 .footer_left {
     width: 30%;
 }
+.footer_left > img {
+    margin-bottom: 10px;
+}
 .company_address, .contact, .Email {
     display: flex;
     align-items: center;
@@ -24,9 +27,19 @@
 }
 .address, .phone_number, .Email_contact {
     margin:7px;
+    color: #000;
+    color: #000;
+    text-align: justify;
+    
+    /* Body/Body 1 */
+    font-family: Be Vietnam Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%; /* 18.9px */
 }
 .phone_number, .Email_contact {
-    color: rgb(94, 78, 78);
+    color: rgb(201, 181, 181);
     text-decoration: underline;
 }
 .footer_right {
@@ -44,22 +57,63 @@
     text-decoration: none;
     display: block;
     color: black;
+    color: #000;
+
+    /* Body/Body 1 */
+    font-family: Be Vietnam Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%; /* 18.9px */
 }
 a:hover {
     color: white;
+}
+.pay {
+    color: #FFF;
+
+    /* Button/Button 2 */
+    font-family: Be Vietnam Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 19.2px */
+}
+.category_pay {
+    display: flex;
 }
 .category_pay > a > img {
     border: 1px solid black;
     padding: 5px;
     border-radius: 5px;
     margin: 0 3px;
+    height: 36px;
+    width: 56px;
 }
 .text_footer {
+    margin-top: 10px;
     text-align: center;
 }
-.contact > svg {
-    color: rgb(94, 78, 78);
+.contact > span > svg {
+    color: rgb(201, 181, 181) !important;
 }
-.Email > svg {
-    color: rgb(94, 78, 78);
+.Email > span > svg {
+    color: rgb(201, 181, 181);
+}
+.social_network {
+    display: flex;
+    align-items: center;
+    margin-left: 3px;
+}
+.icon_netword {
+    margin: 8px;
+}
+.icon_netword > span > svg {
+    font-size: 25px;
+}
+.icon_netword > svg {
+    font-size: 25px;
+}
+.img_login {
+    margin-top: 10px;
 }

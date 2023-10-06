@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarDays, faLocationDot, faMoneyBill1Wave } from '@fortawesome/free-solid-svg-icons';
 import { useRouter } from 'next/navigation'
 import '../css/EventDetail.css';
+import { EnvironmentOutlined, } from '@ant-design/icons';
+
 // @ts-ignore
 export default function EventDetail({ eventDetail }) {
   const router = useRouter()
@@ -27,7 +29,7 @@ export default function EventDetail({ eventDetail }) {
                     <p className="date">{eventDetail.date}</p>
                 </div>
                 <div className="address_event">
-                    <FontAwesomeIcon  icon={faLocationDot} />
+                    <EnvironmentOutlined />
                     <p className="address">{eventDetail.address}</p>
                 </div>
                 <div className="price_item">

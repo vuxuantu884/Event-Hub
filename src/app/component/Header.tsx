@@ -9,8 +9,8 @@ function MyApp() {
             <Image
                 src="/images/Barcode.png"
                 priority={true}
-                width={100}
-                height={50}
+                width={130}
+                height={80}
                 alt="Picture of the author"
             />
         </div>

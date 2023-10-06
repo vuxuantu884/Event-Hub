@@ -31,7 +31,7 @@ export default class SimpleSlider extends Component {
           <Image
                 src="/images/caurosel.png"
                 priority={true}
-                width={100}
+                width={1920}
                 height={50}
                 alt="Picture of the author"
             />
@@ -40,7 +40,7 @@ export default class SimpleSlider extends Component {
           <Image
                 src="/images/caurosel.png"
                 priority={true}
-                width={100}
+                width={1920}
                 height={50}
                 alt="Picture of the author"
             />
@@ -49,7 +49,7 @@ export default class SimpleSlider extends Component {
           <Image
                 src="/images/caurosel.png"
                 priority={true}
-                width={100}
+                width={1920}
                 height={50}
                 alt="Picture of the author"
             />
@@ -58,7 +58,7 @@ export default class SimpleSlider extends Component {
           <Image
                 src="/images/caurosel.png"
                 priority={true}
-                width={100}
+                width={1920}
                 height={50}
                 alt="Picture of the author"
             />
@@ -67,7 +67,7 @@ export default class SimpleSlider extends Component {
           <Image
                 src="/images/caurosel.png"
                 priority={true}
-                width={100}
+                width={1920}
                 height={50}
                 alt="Picture of the author"
             />

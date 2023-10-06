@@ -6,9 +6,11 @@ import '../css/container.css';
 import EventDetail from './EventDetail';
 import SeeMoreButton from './SeeMoreButton';
 import Image from 'next/image';
-import { Button, Dropdown, message, Space, Tooltip } from 'antd';
-import { DownOutlined, UserOutlined } from '@ant-design/icons';
-import type { MenuProps } from 'antd';
+// import { Button, Dropdown, message, Space, Tooltip } from 'antd';
+// import { DownOutlined, UserOutlined } from '@ant-design/icons';
+// import type { MenuProps } from 'antd';
+import "bootstrap/dist/css/bootstrap.css";
+import { useEffect } from "react";
 
 const options1 = [
   { label: 'Tuần này', value: 'option1' },
@@ -39,78 +41,81 @@ const listImages = [
   },
   {
     id: 2,
-    img: '/images/image2.png',
+    img: '/images/image2.svg',
   },
   {
     id: 3,
-    img: '/images/image3.png',
+    img: '/images/image3.svg',
   },
   {
     id: 4,
-    img: '/images/image4.png',
+    img: '/images/image4.svg',
   },
   {
     id: 5,
-    img: '/images/image5.png',
+    img: '/images/image5.svg',
   },
   {
     id: 6,
-    img: '/images/image6.png',
+    img: '/images/image6.svg',
   },
   {
     id: 7,
-    img: '/images/image7.png',
+    img: '/images/image7.svg',
   },
   {
     id: 8,
-    img: '/images/image8.png',
+    img: '/images/image8.svg',
   },
   {
     id: 9,
-    img: '/images/image9.png',
+    img: '/images/image9.svg',
   },
 ];
-const items: MenuProps['items'] = [
-  {
-    label: 'Thứ 2',
-    key: '1',
-  },
-  {
-    label: 'Thứ 3',
-    key: '2',
-  },
-  {
-    label: 'Thứ 4',
-    key: '3',
-  },
-  {
-    label: 'Thứ 5',
-    key: '4',
-  },
-];
-const item: MenuProps['items'] = [
-  {
-    label: 'Ca nhạc',
-    key: '1',
-  },
-  {
-    label: 'Hát chèo',
-    key: '2',
-  },
-];
-const handleMenuClick: MenuProps['onClick'] = (e) => {
-  message.info('Click on menu item.');
-  console.log('click', e);
-};
-const menuProps = {
-  items,
-  onClick: handleMenuClick,
-};
-const menuProp = {
-  item,
-  onClick: handleMenuClick,
-};
+// const items: MenuProps['items'] = [
+//   {
+//     label: 'Thứ 2',
+//     key: '1',
+//   },
+//   {
+//     label: 'Thứ 3',
+//     key: '2',
+//   },
+//   {
+//     label: 'Thứ 4',
+//     key: '3',
+//   },
+//   {
+//     label: 'Thứ 5',
+//     key: '4',
+//   },
+// ];
+// const item: MenuProps['items'] = [
+//   {
+//     label: 'Ca nhạc',
+//     key: '1',
+//   },
+//   {
+//     label: 'Hát chèo',
+//     key: '2',
+//   },
+// ];
+// const handleMenuClick: MenuProps['onClick'] = (e) => {
+//   message.info('Click on menu item.');
+//   console.log('click', e);
+// };
+// const menuProps = {
+//   items,
+//   onClick: handleMenuClick,
+// };
+// const menuProp = {
+//   item,
+//   onClick: handleMenuClick,
+// };
 export default function Container() {
+  useEffect(() => {
+    import("bootstrap/dist/js/bootstrap");
+  }, []);
   return (
     <div>
       <Carousel />
@@ -121,13 +126,23 @@ export default function Container() {
             {/* <Dropdown select='selecOption1' options={options1} />
             <Dropdown select='selecOption2' options={options2} /> */}
             <div className="dropdown">
-              <button className="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
+              <button className="btn btn-secondary dropdown-toggle button_week" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Tuần này
               </button>
               <ul className="dropdown-menu">
-                <li><button className="dropdown-item" type="button">Dropdown item</button></li>
-                <li><button className="dropdown-item" type="button">Dropdown item</button></li>
-                <li><button className="dropdown-item" type="button">Dropdown item</button></li>
+                <li><a className="dropdown-item" href="#">Thứ 2</a></li>
+                <li><a className="dropdown-item" href="#">Thứ 3</a></li>
+                <li><a className="dropdown-item" href="#">Thứ 4</a></li>
+              </ul>
+            </div>
+            <div className="dropdown">
+              <button className="btn btn-secondary dropdown-toggle button_event" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Loại sự kiện
+              </button>
+              <ul className="dropdown-menu">
+                <li><a className="dropdown-item" href="#">Kpop</a></li>
+                <li><a className="dropdown-item" href="#">BTS</a></li>
+                <li><a className="dropdown-item" href="#">Son Tung</a></li>
               </ul>
             </div>
           </div>

@@ -38,6 +38,14 @@
     align-items: center;
     justify-content: space-between;
 }
+.title_content > {
+    color: #000;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
 .selecOption1 {
     border: none;
     background-color: #F2F4FF;
@@ -78,4 +86,27 @@
 .img_donors {
     width: 60%;
     height: 70%;
+}
+.filter_content {
+    display: flex !important;
+}
+/* .filter_content > .dropdown > button {
+    border-radius: 30px !important;
+} */
+.button_week, .button_event {
+    border-radius: 30px !important;
+    margin: 5px;
+    background-color: #F2F4FF !important;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black !important;
+    border: none !important;
+    padding: 10px 20px !important;
+}
+.slick-slider {
+    cursor: pointer !important;
 }
