@@ -117,3 +117,34 @@ a:hover {
 .img_login {
     margin-top: 10px;
 }
+
+/* Mobile */
+@media (max-width: 768px) {
+    .footer {
+        margin-top: 30px;
+        border-top: 1px solid rgb(160, 157, 154);
+        padding: 20px 10px;
+        background-color: #8F3FBC;
+    }
+    .block_footer {
+        display: block;
+        justify-content: space-between;
+        padding: 20px 0;
+        border-top: 1px solid rgb(102, 102, 102);
+        border-bottom: 1px solid rgb(102, 102, 102);
+    }
+    .footer_left, .footer_center, .footer_right  {
+        width: 100%;
+    }
+    .footer_center {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .footer_right {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .block_right {
+        margin-left: 7px;
+    }
+}

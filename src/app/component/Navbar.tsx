@@ -5,6 +5,8 @@ import { FaSearch } from 'react-icons/fa';
 import Dropdown from './DropDown';
 import '../css/navbar.css';
 import Image from 'next/image';
+import { SearchOutlined, CaretDownOutlined } from '@ant-design/icons';
+
 const options = [
   { label: 'Tiếng Việt', value: 'option1' },
   { label: 'Tiếng Anh', value: 'option2' },
@@ -13,6 +15,9 @@ const options = [
 const Navbar = () => {
   return (
     <div className='navbar'>
+      <div className="icon_search_mobile">
+        <SearchOutlined />
+      </div>
       <div className="navbar-navigation">
         <ul className='navigation'>
             <li>
@@ -45,6 +50,9 @@ const Navbar = () => {
           />
           <Dropdown select='select' options={options} />
         </div>
+      </div>
+      <div className="icon_down_mobile">
+        <CaretDownOutlined />
       </div>
     </div>
   );

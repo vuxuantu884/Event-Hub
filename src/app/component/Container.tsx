@@ -10,6 +10,7 @@ import Image from 'next/image';
 // import { DownOutlined, UserOutlined } from '@ant-design/icons';
 // import type { MenuProps } from 'antd';
 import "bootstrap/dist/css/bootstrap.css";
+import { useRouter } from 'next/navigation'
 import { useEffect } from "react";
 
 const options1 = [
@@ -113,12 +114,15 @@ const listImages = [
 //   onClick: handleMenuClick,
 // };
 export default function Container() {
+  const router = useRouter()
   useEffect(() => {
     import("bootstrap/dist/js/bootstrap");
   }, []);
   return (
     <div>
-      <Carousel />
+      <div className="block_coursel" onClick={() => router.push('/page1')}>
+        <Carousel />
+      </div>
       <div className='main_content'>
         <div className='title_content'>
           <h2 className='title'>Sự Kiện Sắp Tới</h2>

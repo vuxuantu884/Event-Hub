@@ -110,3 +110,46 @@
 .slick-slider {
     cursor: pointer !important;
 }
+
+/*  Mobile */
+@media (max-width: 768px) {
+    .main_content {
+        width: 90%;
+        margin: 50px auto;
+    }
+    .title_content {
+        width: 100%;
+        display: inline-block;
+    }
+    .title {
+        color: #000;
+        /* font-family: Inter; */
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    .filter_content {
+        display: flex !important;
+        justify-content: space-between;
+    }
+    .filter_content > .dropdown > button {
+        width: 160px;
+    }
+    .slick-prev:before, .slick-next:before {
+        /* font-family: 'slick'; */
+        font-size: 20px;
+        /* line-height: 1; */
+        /* opacity: .75; */
+        color: rgb(67, 62, 62);
+        /* -webkit-font-smoothing: antialiased; */
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .slick-next {
+        right: -25px;
+        display: block;
+        margin-right: 28px;
+        /* background-color: rgb(169, 163, 163); */
+        z-index: 1;
+    }
+}
