@@ -1,5 +1,6 @@
 'use client'
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/Cart.css';
 // @ts-ignore
 export default function Cart({ ticket }) {

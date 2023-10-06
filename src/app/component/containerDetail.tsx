@@ -1,11 +1,13 @@
 'use client'
 import '../css/containerDetail.css';
 import Image from 'next/image';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Modal } from 'antd';
 import { faClock, faCalendarDays, faLocationDot, faMoneyBill1Wave, faPaperPlane  } from '@fortawesome/free-solid-svg-icons';
 import Cart from './Cart';
+import '../css/Cart.css';
 
 const listCart = [
     {
@@ -82,19 +84,63 @@ function containerDetail() {
                             <FontAwesomeIcon icon={faPaperPlane} />
                         </button>
                         <div className="book_ticker_online">
-                            <div className="st-total ">
-                                <div className="st-label">15.1k</div>
-                                <div className="st-shares">
-                                    Shares
-                                </div>
+                            <div className="st-remove-label">
+                                <Image
+                                    src="/images/network1.svg"
+                                    className='img_logo'
+                                    priority={true}
+                                    width={80}
+                                    height={80}
+                                    alt="Picture of the author"
+                                />
                             </div>
                             <div className="st-remove-label">
                                 <Image
-                                    src="/images/image9.png"
+                                    src="/images/network2.svg"
                                     className='img_logo'
                                     priority={true}
-                                    width={40}
-                                    height={40}
+                                    width={80}
+                                    height={80}
+                                    alt="Picture of the author"
+                                />
+                            </div>
+                            <div className="st-remove-label">
+                                <Image
+                                    src="/images/network3.svg"
+                                    className='img_logo'
+                                    priority={true}
+                                    width={80}
+                                    height={80}
+                                    alt="Picture of the author"
+                                />
+                            </div>
+                            <div className="st-remove-label">
+                                <Image
+                                    src="/images/network4.svg"
+                                    className='img_logo'
+                                    priority={true}
+                                    width={80}
+                                    height={80}
+                                    alt="Picture of the author"
+                                />
+                            </div>
+                            <div className="st-remove-label">
+                                <Image
+                                    src="/images/network5.svg"
+                                    className='img_logo'
+                                    priority={true}
+                                    width={80}
+                                    height={80}
+                                    alt="Picture of the author"
+                                />
+                            </div>
+                            <div className="st-remove-label">
+                                <Image
+                                    src="/images/network6.svg"
+                                    className='img_logo'
+                                    priority={true}
+                                    width={80}
+                                    height={80}
                                     alt="Picture of the author"
                                 />
                             </div>
