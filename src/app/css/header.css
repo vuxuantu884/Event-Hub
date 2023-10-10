@@ -4,7 +4,7 @@
     justify-content: space-around;
     height: 80px;
     flex-shrink: 0;
-    background-color: #8F3FBC;
+    background: var(--Primary, linear-gradient(180deg, #7872D6 0%, #E17295 100%));
 }
 .header_left {
     display: flex;

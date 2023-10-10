@@ -2,7 +2,7 @@
     margin-top: 30px;
     border-top: 1px solid rgb(160, 157, 154);
     padding: 50px;
-    background-color: #8F3FBC;
+    background: var(--Primary, linear-gradient(180deg, #7872D6 0%, #E17295 100%));
 }
 .block_footer {
     display: flex;
@@ -124,7 +124,7 @@ a:hover {
         margin-top: 30px;
         border-top: 1px solid rgb(160, 157, 154);
         padding: 20px 10px;
-        background-color: #8F3FBC;
+        background: var(--Primary, linear-gradient(180deg, #7872D6 0%, #E17295 100%));
     }
     .block_footer {
         display: block;

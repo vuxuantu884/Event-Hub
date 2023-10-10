@@ -1,4 +1,5 @@
-.img_detail {
+.img_detail_desktop {
+    display: block;
     width: 100%;
 }
 .font_ticket {
@@ -117,7 +118,7 @@
 }
 .title-border-left {
     color: #333;
-    border-left: 5px solid #ff672a;
+    border-left: 4px solid var(--Primary, #7872D6);
     display: inline-block;
     padding-left: 15px;
     font-weight: 700!important;
@@ -199,11 +200,6 @@ label {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
-.orange-background {
-    background-color: #ff672a!important;
-    border-color: #ff672a!important;
-    color: #fff!important;
-}
 .btn {
     display: inline-block;
     padding: 6px 12px;
@@ -253,7 +249,10 @@ tr {
     font-weight: 700!important;
 }
 .orange-color {
-    color: #ff672a!important;
+    background: var(--Primary, linear-gradient(180deg, #7872D6 0%, #E17295 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .icheckbox_square-red {
     position: relative;
@@ -268,8 +267,9 @@ tr {
 }
 
 .orange-background {
-    background-color: #ff672a!important;
-    border-color: #ff672a!important;
+    /* background-color: #ff672a!important; */
+    background: var(--Primary, linear-gradient(180deg, #7872D6 0%, #E17295 100%)) !important;
+    /* border-color: var(--Primary, linear-gradient(180deg, #7872D6 0%, #E17295 100%)); */
     color: #fff!important;
 }
 .btn-block {
@@ -282,32 +282,130 @@ tr {
 }
 .confirmclosed {
     width: 100%;
-    background-color:#8F9294;
+    background-color:#dbdfe2 !important;
 }
 
-/* .icheck {
-    position: absolute;
-    top: -20%;
-    left: -20%;
-    display: block;
-    width: 140%;
-    height: 140%;
-    margin: 0px;
-    padding: 0px;
-    background: rgb(255, 255, 255);
-    border: 0px;
-    opacity: 0;
-} */
-/* .iCheck-helper {
-    position: absolute;
-    top: -20%;
-    left: -20%;
-    display: block;
-    width: 140%;
-    height: 140%;
-    margin: 0px;
-    padding: 0px;
-    background: rgb(255, 255, 255);
-    border: 0px;
-    opacity: 0;
-} */
+.img_detail_mobile {
+    display: none;
+}
+.title_mobile {
+    display: none;
+}
+.image_organiser {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+   .img_detail_desktop {
+        display: none;
+   }
+   .img_detail_mobile {
+        display: block;
+    }
+    .book_ticket {
+        display: block;
+        justify-content: space-between;
+        box-shadow: 0 -2px 20px 2px #ccc;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        font-family: "Open Sans";
+        padding: 20px;
+    }
+    .information_ticker {
+        width: 100%;
+    }
+    .ticket {
+        margin-top: 30px;
+        width: 100%;
+    }
+    .information_Book_ticket {
+        width: 100%;
+        margin: 5px 0;
+    }
+    .button_book {
+        display: flex;
+        margin: 0 auto;
+        width: 289px;
+        padding: 0px 16px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        background: var(--Primary, linear-gradient(180deg, #7872D6 0%, #E17295 100%));
+    }
+    .book_ticker_online {
+        width: 289px;
+        margin: 10px auto;
+    }
+    #contact_support > p {
+        margin-bottom: 1px;
+    }
+    .ticket_title {
+        text-align: center;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        background: var(--Primary, linear-gradient(180deg, #7872D6 0%, #E17295 100%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .ticket_info_box > p {
+        margin-bottom: 0;
+    }
+    .ticket_info_box > p > span {
+        font-family: verdana, geneva, sans-serif;
+        font-size: 10pt;
+    }
+    .img_event_detail {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .title_desktop {
+        display: none;
+    }
+    .title_mobile {
+        display: block;
+    }
+    .sub_organiser {
+        display: block;
+    }
+    .image_organiser {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .title_about_organiser {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    .about_organiser {
+        margin-left: 0;
+    }
+    .content_introduce {
+        color: #000;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .form-control {
+        display: block;
+        width: 100%;
+        height: 33px !important;
+        padding: 8px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+}
