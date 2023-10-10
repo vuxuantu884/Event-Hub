@@ -7,6 +7,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Modal } from 'antd';
 import { faClock, faCalendarDays, faLocationDot, faMoneyBill1Wave, faPaperPlane  } from '@fortawesome/free-solid-svg-icons';
 import Cart from './Cart';
+import Table from './Table';
+import Pay from '../pay/page';
 import '../css/Cart.css';
 
 const listCart = [
@@ -31,10 +33,65 @@ const listCart = [
         price: '1.100.000',
     },
 ]
+const data = [
+    {
+        area: [
+            {
+                id: 1,
+                name: 'Khu A'
+            },
+            {
+                id: 2,
+                name: 'Khu B'
+            }
+        ],
+        ticket: [
+            {
+                id: 1,
+                nameticket: 'Vé VVIP'
+            },
+            {
+                id: 2,
+                nameticket: 'Vé VIP'
+            }
+        ],
+        price: '4,500,00VND'
+    },
+    {
+        area: [
+            {
+                id: 1,
+                name: 'Khu A'
+            },
+            {
+                id: 2,
+                name: 'Khu B'
+            }
+        ],
+        ticket: [
+            {
+                id: 1,
+                nameticket: 'Vé VVIP'
+            },
+            {
+                id: 2,
+                nameticket: 'Vé VIP'
+            }
+        ],
+        price: '4,500,00VND'
+    }
+]
 function containerDetail() {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const showModal = () => {
-        setIsModalOpen(true);
+        
+        if (window.innerWidth >= 768) {
+            // Hiển thị modal trên desktop
+            setIsModalOpen(true);
+          } else {
+            // Chuyển sang trang thanh toán trên mobile
+            window.location.href = '/pay'; // Điều hướng đến trang thanh toán
+          }
       };
     
       const handleOk = () => {
@@ -47,14 +104,22 @@ function containerDetail() {
   return (
     <div className='containerDetail'>
         <div className="block_img_detail">
-            <Image
-                src="/images/img_detail.jpg"
-                className='img_detail'
-                priority={true}
-                width={1920}
-                height={500}
-                alt="Picture of the author"
-            />
+                <Image
+                    src="/images/img_detail.jpg"
+                    className='img_detail_desktop'
+                    priority={true}
+                    width={1920}
+                    height={500}
+                    alt="Picture of the author"
+                />
+                <Image
+                    src="/images/img_detail.svg"
+                    className='img_detail_mobile'
+                    priority={true}
+                    width={1920}
+                    height={500}
+                    alt="Picture of the author"
+                />
             <div className="information_Book_ticket">
                 <div className="book_ticket">
                     <div className="information_ticker">
@@ -181,7 +246,8 @@ function containerDetail() {
                 </div>
                 <div className="organizational_information">
                     <div id="ticket-agent">
-                        <h2 className="ticket_title">THÔNG TIN ĐƠN VỊ TỔ CHỨC</h2>
+                        <h2 className="ticket_title title_desktop">THÔNG TIN ĐƠN VỊ TỔ CHỨC</h2>
+                        <h2 className="ticket_title title_mobile">GIỚI THIỆU ĐƠN VỊ TỔ CHỨC</h2>
                         <div className="ticket_info_box">
                             <div className="sub_organiser">
                                 <div className="image_organiser">
@@ -195,7 +261,7 @@ function containerDetail() {
                                 </div>
                                 <div className="about_organiser">
                                     <h4 className='title_about_organiser'>BOM Entertainment</h4>
-                                    <div>
+                                    <div className='content_introduce'>
                                         <p className='detail_information' ><span className='text_information'>Được thành lập từ năm 2016, Công ty TNHH Bôm Hà Nội là công ty đa ngành nghề với các lĩnh vực như xây dựng; đầu tư, cho thuê bất động sản; xuất nhập khẩu các sản phẩm y tế;…Năm 2022, BÔM Hà Nội phát triển lĩnh vực hoạt động nghệ thuật giải trí với tên gọi BOM Entertainment - mục đích là cầu nối, kết nối, quảng bá văn hóa Hàn Quốc đến khán giả Việt Nam rộng rãi hơn nữa. BOM Entertainment có mối quan hệ thân thiết với các công ty giải trí hàng đầu tại Hàn Quốc. Vào 21/10/2023 tại Trung tâm Hội nghị Adora Center, 431 Hoàng Văn Thụ, Phường 4, Quận Tân Bình, TP.Hồ Chí Minh, BOM Entertainment là đơn vị tổ chức chương trình Lee Jong Suk 2023 Fanmeeting tour – “Dear.My with” trong Fanmeeting tour của diễn viên Lee Jong Suk.</span></p>
                                         <p className='detail_information' ><span className='text_information'>-----------------</span></p>
                                         <p className='detail_information' ><span className='text_information'>ENGLISH</span></p>
@@ -333,14 +399,14 @@ function containerDetail() {
                             <div className="col-8">
                                 <div className="title-border-left uppercase bold">Giỏ hàng của bạn</div>
                                 <div className="form-body">
-                                    
-                                    {listCart.map((tickets, idx) => {
+                                    <Table data={data} />
+                                    {/* {listCart.map((tickets, idx) => {
                                         return (
                                             <div key={idx}>
                                                 <Cart ticket={tickets} />
                                             </div>
                                         )
-                                    })}
+                                    })} */}
                                 </div>
                                 <div className="row">
                                     <div className="col-md-6">
