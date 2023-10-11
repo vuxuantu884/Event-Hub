@@ -59,7 +59,7 @@
   .select {
     color: white;
     border: none; 
-    background-color: #E17295;
+    background-color: initial;
     padding: 5px; 
     outline: none;
     cursor: pointer;
