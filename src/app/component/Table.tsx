@@ -5,13 +5,13 @@ import '../css/table.css';
 import { useRouter } from 'next/navigation'
 import { useEffect } from "react";
 
-const Table = ({ data }) => {
+const Table = ({ data } : any) => {
     const router = useRouter()
-    useEffect(() => {
-        import("bootstrap/dist/js/bootstrap");
-    }, []);
+    // useEffect(() => {
+    //     import("bootstrap/dist/js/bootstrap");
+    // }, []);
   return (
-    <table>
+    <table> 
       <thead>
         <tr>
           <th>Khu Vực</th>
@@ -22,7 +22,7 @@ const Table = ({ data }) => {
         </tr>
       </thead>
       <tbody>
-        {data.map((item) => (
+        {data.map((item : any) => (
           <tr key={item.id}>
             <td>
                 <div className="dropdown">

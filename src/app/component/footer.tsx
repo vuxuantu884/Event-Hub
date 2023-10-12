@@ -67,10 +67,10 @@ export default function footer() {
         <div className='footer_center'>
           <div className='block_center'>
             <Link href='/'>Danh mục</Link>
-            <Link href='/'>Giới thiệu</Link>
+            <Link href='#'>Giới thiệu</Link>
             <Link href='/'>Phương thức thanh toán</Link>
             <Link href='/'>Chính sách bảo mật và các điều khoản</Link>
-            <Link href='/'>Hướng dẫn đặt vé</Link>
+            <Link href='/instruction'>Hướng dẫn đặt vé</Link>
             <Link href='/'>Các câu hỏi thường gặp</Link>
             <Link href='/'>Chính sách và các điều khoản sử dụng khác</Link>
           </div>

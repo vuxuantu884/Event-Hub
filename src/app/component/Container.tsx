@@ -115,9 +115,9 @@ const listImages = [
 // };
 export default function Container() {
   const router = useRouter()
-  useEffect(() => {
-    import("bootstrap/dist/js/bootstrap");
-  }, []);
+  // useEffect(() => {
+  //   import("bootstrap/dist/js/bootstrap");
+  // }, []);
   return (
     <div>
       <div className="block_coursel" onClick={() => router.push('/page1')}>

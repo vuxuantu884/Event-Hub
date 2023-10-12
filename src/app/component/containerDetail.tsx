@@ -81,7 +81,7 @@ const data = [
         price: '4,500,00VND'
     }
 ]
-function containerDetail() {
+const ContainerDetail = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const showModal = () => {
         
@@ -458,4 +458,4 @@ function containerDetail() {
   );
 }
 
-export default containerDetail;
+export default ContainerDetail;
