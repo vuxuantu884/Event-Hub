@@ -11,7 +11,7 @@ const Dropdown = ({ options, select }) => {
 // @ts-ignore
   return (
     <select className={select} onChange={handleChange} value={selectedOption}>
-      {options.map((item) => (
+      {options.map((item : any) => (
         <option key={item.value} value={item.value}>
           {item.label}
         </option>
