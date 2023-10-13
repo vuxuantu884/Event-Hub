@@ -12,6 +12,8 @@ import Image from 'next/image';
 import "bootstrap/dist/css/bootstrap.css";
 import { useRouter } from 'next/navigation'
 import { useEffect } from "react";
+import baseAxios from '../BaseApi/baseAxios.api';
+import { error } from 'console';
 
 const options1 = [
   { label: 'Tuần này', value: 'option1' },
@@ -115,9 +117,26 @@ const listImages = [
 // };
 export default function Container() {
   const router = useRouter()
-  // useEffect(() => {
-  //   import("bootstrap/dist/js/bootstrap");
-  // }, []);
+  useEffect(() => {
+      const url = 'api/getEvents'
+      const data = {
+        Key: 'X-API-KEY',
+        Value: '4e7757e2-df3e-460c-acbd-edfb1d1811fa'
+      }
+      const apiKey = 'your-api-key';
+      baseAxios.post(url, data, {
+        headers: {
+          Authorization: `Bearer ${apiKey}`,
+          'Content-Type': 'application/json',
+        }
+        })
+        .then((response) => {
+          console.log(response);
+        })
+        .catch((error) => {
+          console.log(error);
+        })
+  }, []);
   return (
     <div>
       <div className="block_coursel" onClick={() => router.push('/page1')}>
